@@ -1,4 +1,4 @@
-arize-phoenix==3.17.0
+# arize-phoenix - optional, not used in core demo
 requests==2.31.0
 python-dotenv==1.0.0
 fastapi==0.115.12
