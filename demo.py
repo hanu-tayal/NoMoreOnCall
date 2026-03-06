@@ -1,13 +1,19 @@
-import subprocess
-import time
+"""
+NoMoreOnCall Demo - End-to-end demonstration of the error analysis workflow.
+
+Runs the notification API, analyzes a sample error, generates fix suggestions,
+and displays the results. Use this to understand how the system works.
+"""
+
 import json
-import os
-from pathlib import Path
-from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
-import uvicorn
 import logging
+import subprocess
 import threading
+import time
+from pathlib import Path
+
+import uvicorn
+from fastapi import FastAPI
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

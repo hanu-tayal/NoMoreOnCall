@@ -1,12 +1,20 @@
+"""
+Code Fixer - Automated code change suggestions for application errors.
+
+Reads issue JSON files from the Debug Analyzer, generates fix suggestions
+based on error type, and optionally applies changes, creates patches,
+and opens pull requests.
+"""
+
 import json
 import logging
-from dataclasses import dataclass
-from typing import List, Dict, Any
-import re
-import itertools
-import git  # GitPython for git operations
-import requests  # For GitHub API
 import os
+import re
+from dataclasses import dataclass
+from typing import Any, Dict, List
+
+import git
+import requests
 
 # Configure logging
 logging.basicConfig(
