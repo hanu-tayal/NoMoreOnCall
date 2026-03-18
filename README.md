@@ -1,4 +1,4 @@
-# NoMoreOnCall
+# AI On-Call Agent
 
 > AI agents that replace human on-call engineers. Analyze errors, identify root causes, and generate code fixes automatically.
 
@@ -27,10 +27,10 @@ NoMoreOnCall is an automated error analysis and debugging system that helps deve
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/hanu-tayal/NoMoreOnCall.git
-cd NoMoreOnCall
+git clone https://github.com/hanu-tayal/ai-oncall-agent.git
+cd ai-oncall-agent
 python -m venv .venv
-.venv\Scripts\activate   # Windows
+.venv\Scriptsctivate   # Windows
 # source .venv/bin/activate  # macOS/Linux
 
 # 2. Install dependencies
